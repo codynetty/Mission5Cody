@@ -1,0 +1,26 @@
+﻿<div class="text-center">
+
+@{
+    ViewData["Title"] = "Book a Time";
+}
+<h1>@ViewData["Title"]</h1>
+
+    <h2><strong>Fill out the Form below</strong></h2>
+    <form>
+    <label>Name:</label>
+    <input id="txtName"/>
+    <br />
+    <label>Hours:</label>
+    <input id="txtHours" />
+    <br />
+    <label>Rate:</label>
+    <input id="txtRate" readonly value="$25.00" />
+    <br />
+    <br />
+    <input type="button" value="Calculate Total" id="btnSubmit" />
+
+</form>
+<div id="totalOutput"></div>
+
+</div>
+
